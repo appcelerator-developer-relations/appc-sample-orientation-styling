@@ -17,7 +17,8 @@ This will make sure the window is correctly styled when opening up the window be
 
 The only thing left to do, if you want to dynamically change styling while a window is actually opened, is to monitor the custom generated backbone event to reset the classes as shown in `index.js`
 
-```Alloy.Globals.events.on('orientationchange', () => {
+```
+Alloy.Globals.events.on('orientationchange', () => {
   // Reset the class here, Alloy handles tss if rules
   $.resetClass($.DynamicLabel, 'DynamicLabel');
 });

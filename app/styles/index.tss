@@ -1,0 +1,27 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+// Specify the same class for both landscape and portrait
+// Alloy handles the rest
+".DynamicLabel[if=Alloy.Globals.isPortrait]": {
+	font: {
+		fontSize: 12
+	},
+	color: "Red",
+	text: "Portrait"
+}
+
+".DynamicLabel[if=Alloy.Globals.isLandscape]": {
+  font: {
+    fontSize: 12
+  },
+  color: "Green",
+  text: "Landscape"
+}

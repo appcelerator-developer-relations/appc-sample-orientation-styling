@@ -2,6 +2,7 @@
 
 This demo is intented to demonstrate how to handle dynamic styling based on the device orientation using built in methods.
 
+![Example](https://github.com/appcelerator-developer-relations/appc-sample-orientation-styling/blob/master/rotation_sample.gif?raw=true) 
 ## How does it work?
 
 In `alloy.js` the orientationchange event is monitored. Based on the the orientation 2 globals are set, one for landscape and one for portrait. These 2 variables can then be used in any tss property to add dynamic styling.

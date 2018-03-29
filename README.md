@@ -22,4 +22,4 @@ The only thing left to do, if you want to dynamically change styling while a win
   $.resetClass($.DynamicLabel, 'DynamicLabel');
 });
 ```
-When resetting a class with the 2 definitions specified as above, the rules will trigger again and the right definition is chosen. Don't monitor the `Ti.Gesture` event manually from this point on, as the globals might not have updated already in `Alloy.js`, using the backbone event that is fired from `Alloy.js` makes sure you always know for certain the globals are updated.
+When resetting a class with the 2 definitions specified as above, the rules will trigger again and the right definition is chosen. Don't monitor the `Ti.Gesture` event manually from this point on, as the globals might not have updated already in `alloy.js`, using the backbone event that is fired from `alloy.js` makes sure you always know for certain the globals are updated.
